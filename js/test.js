@@ -4,7 +4,14 @@ const direction={
     three:{icon:"forward", text:"Walk Straight 50Mtrs", isDone :false},
     four:{icon:"right", text:"To your right is Boys Hostel", isDone :false}
 }
-
+const mListElement = document.querySelector("#myUL");
+const mapprdistance = document.querySelector("#distance");
 for(let val in direction){
         console.log(direction[val]);
+    const listElement = document.createElement("li");
+  
+      listElement.innerHTML = direction[val].text;
+  
+      mListElement.appendChild(listElement);
 }
+mapprdistance.innerHTML = mapprdistance.innerHTML +" " + "400 Mtrs";
