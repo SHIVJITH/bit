@@ -4,19 +4,24 @@ function load_img() {
     var file=start+end;
     var orinal_img=document.getElementById("map");
     orinal_img.src='img/'+file+'.png';
-    load_route(file)
+    load_route()
 }
 
 
+const direction=[
+    "Walk Stright 200Mtrs from gate",
+    "Take Left after Mechanical Block",
+    "Walk Straight 50Mtrs",
+    "To your right is Boys Hostel"
+]
 
 
-
-const direction={
-    1:{icon:"forward", text:"Walk Stright 200Mtrs from gate", isDone :false},
-    2:{icon:"left", text="Take Left after Mechanical Block", isDone :false},
-    3:{icon:"forward", text="Walk Straight 50Mtrs", isDone :false},
-    4:{icon:"right", text="To your right is Boys Hostel", isDone :false}
-}
+/*const direction={
+    one:{icon:"forward", text:"Walk Stright 200Mtrs from gate", isDone :false},
+    two:{icon:"left", text:"Take Left after Mechanical Block", isDone :false},
+    three:{icon:"forward", text:"Walk Straight 50Mtrs", isDone :false},
+    four:{icon:"right", text:"To your right is Boys Hostel", isDone :false}
+}*/
 
 const mListElement = document.querySelector("#myUL");
 
@@ -30,26 +35,26 @@ function done(todoId) {
   }
 
   function load_route() {
-    mListElement.innerHTML = "";
-    document.querySelector("#myInput").value = "";
+    //mListElement.innerHTML = "";
+    //document.querySelector("#myInput").value = "";
   
-    todoList.forEach((item) => {
+    direction.forEach((item) => {
       const listElement = document.createElement("li");
       const delBtn = document.createElement("i");
   
-      listElement.innerHTML = item.todoText;
-      listElement.setAttribute("data-id", item.id);
+      listElement.innerHTML = "hello";
+      //listElement.setAttribute("data-id", item.id);
   
-      if (item.isDone) {
+      /*if (item.isDone) {
         listElement.classList.add("checked");
       }
   
       listElement.addEventListener("click", function (e) {
         const selectedId = e.target.getAttribute("data-id");
         doneTodo(selectedId);
-      });
+      });*/
   
       mListElement.appendChild(listElement);
-      listElement.appendChild(delBtn);
+      //listElement.appendChild(delBtn);
     });
   }
