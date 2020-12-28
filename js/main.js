@@ -8,12 +8,12 @@ function load_img() {
 }
 
 
-const direction=[
+/*const direction=[
     "Walk Stright 200Mtrs from gate",
     "Take Left after Mechanical Block",
     "Walk Straight 50Mtrs",
     "To your right is Boys Hostel"
-]
+]*/
 
 
 /*const direction={
@@ -21,7 +21,7 @@ const direction=[
     two:{icon:"left", text:"Take Left after Mechanical Block", isDone :false},
     three:{icon:"forward", text:"Walk Straight 50Mtrs", isDone :false},
     four:{icon:"right", text:"To your right is Boys Hostel", isDone :false}
-}*/
+}
 
 const mListElement = document.querySelector("#myUL");
 
@@ -52,9 +52,11 @@ function done(todoId) {
       listElement.addEventListener("click", function (e) {
         const selectedId = e.target.getAttribute("data-id");
         doneTodo(selectedId);
-      });*/
+      });
   
       mListElement.appendChild(listElement);
       //listElement.appendChild(delBtn);
     });
   }
+  
+*/
