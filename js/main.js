@@ -8,55 +8,22 @@ function load_img() {
 }
 
 
-/*const direction=[
-    "Walk Stright 200Mtrs from gate",
-    "Take Left after Mechanical Block",
-    "Walk Straight 50Mtrs",
-    "To your right is Boys Hostel"
-]*/
-
-
-/*const direction={
-    one:{icon:"forward", text:"Walk Stright 200Mtrs from gate", isDone :false},
-    two:{icon:"left", text:"Take Left after Mechanical Block", isDone :false},
-    three:{icon:"forward", text:"Walk Straight 50Mtrs", isDone :false},
-    four:{icon:"right", text:"To your right is Boys Hostel", isDone :false}
+const direction={
+  one:{icon:"forward", text:"Walk Stright 200Mtrs from gate", isDone :false},
+  two:{icon:"left", text:"Take Left after Mechanical Block", isDone :false},
+  three:{icon:"forward", text:"Walk Straight 50Mtrs", isDone :false},
+  four:{icon:"right", text:"To your right is Boys Hostel", isDone :false}
 }
-
 const mListElement = document.querySelector("#myUL");
-
-function done(todoId) {
-    const selectedTodoIndex = direction.findIndex((item) => item.id == todoId);
-  
-    todoList[selectedTodoIndex].isDone
-      ? (todoList[selectedTodoIndex].isDone = false)
-      : (todoList[selectedTodoIndex].isDone = true);
-    displayTodos();
-  }
-
+const mapprdistance = document.querySelector("#distance");
   function load_route() {
-    //mListElement.innerHTML = "";
-    //document.querySelector("#myInput").value = "";
-  
-    direction.forEach((item) => {
+    for(let val in direction){
+      console.log(direction[val]);
       const listElement = document.createElement("li");
-      const delBtn = document.createElement("i");
-  
-      listElement.innerHTML = "hello";
-      //listElement.setAttribute("data-id", item.id);
-  
-      /*if (item.isDone) {
-        listElement.classList.add("checked");
-      }
-  
-      listElement.addEventListener("click", function (e) {
-        const selectedId = e.target.getAttribute("data-id");
-        doneTodo(selectedId);
-      });
-  
+
+      listElement.innerHTML = direction[val].text;
+
       mListElement.appendChild(listElement);
-      //listElement.appendChild(delBtn);
-    });
+    }
+    mapprdistance.innerHTML = mapprdistance.innerHTML +" " + "400 Mtrs";
   }
-  
-*/
