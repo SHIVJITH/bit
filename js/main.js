@@ -5,6 +5,27 @@ function load_img() {
     var orinal_img=document.getElementById("map");
     orinal_img.src='img/'+file+'.png';
     load_route()
+    
+}
+function zoomin(){
+  var myImg = document.getElementById("map");
+  var currHeight= myImg.clientHeight;
+  var currWidth = myImg.clientWidth;
+  if(currWidth == 2500 || currHeight == 2500) return false;
+   else{
+      myImg.style.height = (currWidth + 100) + "px";
+      myImg.style.width = (currWidth + 100) + "px";
+  } 
+}
+function zoomout(){
+  var myImg = document.getElementById("map");
+  var currHeight= myImg.clientHeight;
+  var currWidth = myImg.clientWidth;
+  if(currWidth == 100 || currHeight == 100) return false;
+   else{
+      myImg.style.height = (currWidth - 100) + "px";
+      myImg.style.width = (currWidth - 100) + "px";
+  } 
 }
 
 

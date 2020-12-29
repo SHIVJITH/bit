@@ -1,3 +1,34 @@
+.left,.right{
+  height: 50vh;
+  width: 100%;
+}
+
+@media screen and (min-width:768px)
+{
+  .left,.right{
+    height: 100vh;
+  }
+}
+.cardcontainer{
+  padding:10px 20px;
+  transition: all .5s;
+  overflow: hidden;
+}
+
+
+.galleryImg{
+  height:70vh;
+  width:70%;
+  transform-origin: 50% 50%;
+  transition: transform 0.5s linear;
+  
+}
+
+ .galleryImg:hover{    
+  transform: scale(2) rotate(0.1deg);
+}
+
+
 body{
     background-color: #242f3e;
     
