@@ -8,12 +8,12 @@ function load_img() {
     
 }
 function zoomin() { 
-  var GFG = document.getElementById("mapdiv"); 
+  var GFG = document.getElementById("map"); 
   var currHeight = GFG.clientHeight; 
     GFG.style.height = (currHeight + 40) + "px"; 
 } 
 function zoomout() { 
-  var GFG = document.getElementById("mapdiv"); 
+  var GFG = document.getElementById("map"); 
   var currHeight = GFG.clientHeight; 
     GFG.style.height = (currHeight - 40) + "px"; 
 }
