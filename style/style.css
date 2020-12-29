@@ -1,4 +1,7 @@
-/* Style the list items */
+body{
+    background-color: #242f3e;
+}
+
 ul li {
     cursor: pointer;
     position: relative;
