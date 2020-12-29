@@ -5,6 +5,17 @@ function load_img() {
     var orinal_img=document.getElementById("map");
     orinal_img.src='img/'+file+'.png';
     load_route()
+    
+}
+function zoomin() { 
+  var GFG = document.getElementById("mapdiv"); 
+  var currHeight = GFG.clientHeight; 
+    GFG.style.height = (currHeight + 40) + "px"; 
+} 
+function zoomout() { 
+  var GFG = document.getElementById("mapdiv"); 
+  var currHeight = GFG.clientHeight; 
+    GFG.style.height = (currHeight - 40) + "px"; 
 }
 
 
