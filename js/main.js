@@ -17,6 +17,9 @@ const direction={
 const mListElement = document.querySelector("#myUL");
 const mapprdistance = document.querySelector("#distance");
   function load_route() {
+    if(mListElement != null){
+      mListElement.innerHTML = "";
+    }
     for(let val in direction){
       console.log(direction[val]);
       const listElement = document.createElement("li");
