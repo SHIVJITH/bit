@@ -8,8 +8,7 @@
 		<link rel="stylesheet" href="/style/style.css">
 	</head>
 	<body>
-		<center>
-		<section class="search">
+		<section class="col-4 search">
 		<div class="dropdown">
 				<select class="btn btn-secondary dropdown-toggle" id="dropstart">
 					<option value="select" selected="selected">Choose Starting point</option>
@@ -28,40 +27,21 @@
 		  
 		</section>
 		<br>
-		<div class="row no-gutter">
-			<div class="col-md-6 no-gutter">
-				<div class="left">
-					<section>
-						<button type="button" class="btn btn-secondary" onclick="zoomin()">  
-							Zoom-In 
-						</button> 
-						  
-						<button type="button" class="btn btn-secondary" onclick="zoomout()">  
-							Zoom-Out 
-						</button> 
-						<div class="cardcontainer" >						
-							<img src="img/original with block.png" class="galleryImg" alt="Map section image" id='map' >
-						</div>
-					</section>
+		<div class="row">
 
-				</div>
+		
+			<div class="col-7 zoom">
+				<img id="map" class="media" src="img/original with block.png" alt="test1">
 			</div>
-			<div class="col-md-6 no-gutter">
-				<div class="right">
-					<section class="navSection">
-						<div id="route">
-							<h4 id="distance"></h4>
-							<ul id="myUL">
-							</ul>
-						</div>
-					</section>
-				</div>
+			<div class="col-5 navigation">
+			
+			<div id="route">
+								<h4 id="distance"></h4>
+								<ul id="myUL">
+								</ul>
+							</div>
 			</div>
 		</div>
-
-		
-		
-	</center>
 
 	
 	</body>
