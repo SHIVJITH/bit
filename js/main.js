@@ -7,15 +7,25 @@ function load_img() {
     load_route()
     
 }
-function zoomin() { 
-  var GFG = document.getElementById("map"); 
-  var currHeight = GFG.clientHeight; 
-    GFG.style.height = (currHeight + 40) + "px"; 
-} 
-function zoomout() { 
-  var GFG = document.getElementById("map"); 
-  var currHeight = GFG.clientHeight; 
-    GFG.style.height = (currHeight - 40) + "px"; 
+function zoomin(){
+  var myImg = document.getElementById("map");
+  var currHeight= myImg.clientHeight;
+  var currWidth = myImg.clientWidth;
+  if(currWidth == 2500 || currHeight == 2500) return false;
+   else{
+      myImg.style.height = (currWidth + 100) + "px";
+      myImg.style.width = (currWidth + 100) + "px";
+  } 
+}
+function zoomout(){
+  var myImg = document.getElementById("map");
+  var currHeight= myImg.clientHeight;
+  var currWidth = myImg.clientWidth;
+  if(currWidth == 100 || currHeight == 100) return false;
+   else{
+      myImg.style.height = (currWidth - 100) + "px";
+      myImg.style.width = (currWidth - 100) + "px";
+  } 
 }
 
 
