@@ -10,7 +10,7 @@ h4{
 ul li {
     cursor: pointer;
     position: relative;
-    padding: 12px 8px 12px 40px;
+    padding: 10px;
     list-style-type: none;
     color: #fff;
     font-size: 14px;
