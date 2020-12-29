@@ -17,9 +17,9 @@ const direction={
 const mListElement = document.querySelector("#myUL");
 const mapprdistance = document.querySelector("#distance");
   function load_route() {
-    if(mListElement != null){
+    
       mListElement.innerHTML = "";
-    }
+    mapprdistance.innerHTML ="";
     for(let val in direction){
       console.log(direction[val]);
       const listElement = document.createElement("li");
@@ -28,5 +28,5 @@ const mapprdistance = document.querySelector("#distance");
 
       mListElement.appendChild(listElement);
     }
-    mapprdistance.innerHTML = mapprdistance.innerHTML +" " + "400 Mtrs";
+    mapprdistance.innerHTML = "Approximate Distance :" +" " + "400 Mtrs";
   }
