@@ -17,6 +17,14 @@
     />
 	<link rel="stylesheet" href="style.css" />
 	<style>
+
+.styleSelect {
+    position: absolute;
+    z-index: 10;
+    width: 168px;
+    height: 34px;
+    border: 1px solid #000;
+}
 		body{
   margin:0px;
   padding:0px;
@@ -121,19 +129,16 @@ ul li {
         </div>
 	  <div class="search">
 		<div class="dropdown">
-				<select class="btn btn-secondary dropdown-toggle" id="dropstart">
-					<option value="select" selected="selected">Choose Starting point</option>
-					<option value="main_gate">Main Gate</option>
-					<option value="boys_hostel">Boys Hostel</option>
-					<option value="girls_hostel">Girls Hostel</option>
+				<select class="btn btn-secondary dropdown-toggle" id="drop" >
+					<option value="select" selected="selected">Choose Navigation</option>
+					<option value="main_gate_to_boys_hostel">Main Gate To Boys Hostel</option>
+					<option value="main_gate_to_principal_office">Main Gate To Principal Office</option>
+          <option value="main_gate_to_girls_hostel">Main Gate To Girls Hostel</option>
+          <option value="main_gate_to_parking">Main Gate To Parking</option>
+          <option value="parking_to_principal_office">Parking To Principal Office</option>
+          <option value="girls_hostel_to_boys_hostel">Girls Hostel To Boys Hostel</option>
 				</select>
-				<select class="btn btn-secondary dropdown-toggle" id="dropend">
-					<option value="select" selected="selected">Choose Destination point</option>
-					<option value="main_gate">Main Gate</option>
-					<option value="boys_hostel">Boys Hostel</option>
-					<option value="girls_hostel">Girls Hostel</option>
-				</select>
-				<button type="button" class="btn btn-secondary" onclick = "load_img()">Go</button>
+				<button type="button" class="btn btn-secondary" onclick = "load_img()">NAVIGATE</button>
 		  </div>
 		</div>
     

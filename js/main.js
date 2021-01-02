@@ -1,24 +1,29 @@
 function load_img() { 
-    var start=document.getElementById("dropstart").value;
-    var end=document.getElementById("dropend").value;
-    var file;
+    // var start=document.getElementById("dropstart").value;
+    // var end=document.getElementById("dropend").value;
+    var file=document.getElementById("drop").value;
 
-    if(start == "select" || end == "select" || start == end){
+    if (file=="select"){
       file ="original with block"
       window.alert("Please select Valid Start and Destination")
     }
-    else if(start=="main_gate"&& end == "boys_hostel" || end=="main_gate"&& start == "boys_hostel" ){
-      file = "main_gate"+"boys_hostel";
-    }
-    else if(start=="main_gate"&& end == "girls_hostel" || end=="main_gate"&& start == "girls_hostel" ){
-      file = "main_gate"+"girls_hostel";
-    }
-    else if(start=="boys_hostel"&& end == "girls_hostel" || end=="boys_hostel"&& start == "girls_hostel"){
-      file = "girls_hostel"+"boys_hostel";
-    }
-    else{
-      file ="original with block"
-    }
+
+    // if(start == "select" || end == "select" || start == end){
+    //   file ="original with block"
+    //   window.alert("Please select Valid Start and Destination")
+    // }
+    // else if(start=="main_gate"&& end == "boys_hostel" || end=="main_gate"&& start == "boys_hostel" ){
+    //   file = "main_gate"+"boys_hostel";
+    // }
+    // else if(start=="main_gate"&& end == "girls_hostel" || end=="main_gate"&& start == "girls_hostel" ){
+    //   file = "main_gate"+"girls_hostel";
+    // }
+    // else if(start=="boys_hostel"&& end == "girls_hostel" || end=="boys_hostel"&& start == "girls_hostel"){
+    //   file = "girls_hostel"+"boys_hostel";
+    // }
+    // else{
+    //   file ="original with block"
+    // }
 
     var orinal_img=document.getElementById("map");
     orinal_img.src='img/'+file+'.png';
