@@ -15,7 +15,6 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-	<link rel="stylesheet" href="style.css" />
 	<style>
 
 .styleSelect {
@@ -54,12 +53,14 @@ img {
   position: absolute;
   top:10px;
   left: 10px;
+  width:100%;
 }
 
 .navigation{
   position: absolute;
   bottom: 20px;
   right: 20px;
+  width: 100%;
 }
 
 
@@ -91,25 +92,18 @@ ul li {
 }
 
 /* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
+
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
+  .search{
+    width: auto;
+  }
+  .navigation{
+    width:33%;
+  }
 }
+
 	</style>
   </head>
   <body>
